@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bantay Barangay</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Bantay Barangay</h1>
+
+            <p>
+            Your direct line to barangay officials.
+            </p>
+
+        </header>
+
+        <main>
+            <section class="send-section">
+                <form id="concernForm">
+
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    >
+
+                    <label for="phone">Mobile Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="09XXXXXXXXX"
+                        required
+                    >
+
+                    <label for="concern">Your Concern</label>
+
+                    <textarea
+                        id="concern"
+                        name="concern"
+                        rows="6"
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="button-send">
+                        Send Concern
+                    </button>
+
+                </form>
+            </section>
+
+        </main>
+    </div>
+    <div id="result"></div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

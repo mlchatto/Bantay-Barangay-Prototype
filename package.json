@@ -2,7 +2,7 @@
   "name": "bantay-barangay",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node server.js"
   },
@@ -11,9 +11,11 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "better-sqlite3": "^13.0.3",
     "dotenv": "^18.0.4",
     "express": "^5.2.1",
+    "express-session": "^1.19.0",
     "twilio": "^6.1.2"
   }
 }

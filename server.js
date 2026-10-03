@@ -705,7 +705,7 @@ ${concernText}
 
         const response = await fetch(
             "https://ollama.com/api/chat",
-            
+
             {
                 method: "POST",
 
@@ -1089,6 +1089,15 @@ app.put("/api/concerns/:id", requireOfficial, (req, res) => {
 
 // ======================================================
 // START SERVER
+
+app.listen(
+    PORT,
+    () => {
+        console.log(
+            `Server running at http://localhost:${PORT}`
+        );
+    }
+);
 
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`Bantay AI server running on port ${PORT}`);

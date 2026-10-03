@@ -1090,11 +1090,6 @@ app.put("/api/concerns/:id", requireOfficial, (req, res) => {
 // ======================================================
 // START SERVER
 
-HEAD
-app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Bantay AI server running on port ${PORT}`);
-});
-
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`Bantay AI server running on port ${PORT}`);
 });

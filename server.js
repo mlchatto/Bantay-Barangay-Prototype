@@ -11,7 +11,7 @@ const twilioClient = twilio(
 );
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // ===============================
 // MIDDLEWARE
@@ -207,7 +207,6 @@ app.get("/api/test-sms", async (req, res) => {
 // ===============================
 // START SERVER
 
-app.listen(PORT, () => {
-
-    console.log(`Server running at http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Bantay AI server running on port ${PORT}`);
 });
